@@ -43,7 +43,7 @@ nav ul{
 #nav-menu .header-left {
     display: flex;
     align-items: center;
-/*     justify-content: space-between; */
+    justify-content: space-between;
     z-index: 100;
     
 }
@@ -464,7 +464,7 @@ align-items: center;
   padding: 5px;
 }
 @media only screen and (max-width: 1000px) {
-/*     #nav-menu {
+    #nav-menu {
         padding: 0 20px;
         position: static;
     }
@@ -493,7 +493,7 @@ align-items: center;
     #nav-menu .header-left nav ul {
         display: block;
     }
-   */
+  
     
     .main_from_about{
       display: flex;
@@ -506,31 +506,30 @@ align-items: center;
 
   .main_from_about .task{
     height: 60vh;
-    width: 80vw;
-    
+    width: 80vw; 
   }
   #home{
     height: 80vh;
   }
 
   #skills{
-    width: 100vw;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(4,200px);
   justify-content: space-around;
   }
+    
 #projects{
 display: grid;
 grid-template-columns: repeat(2,300px);
 justify-content: center;
 margin: auto;
 }
-
-
+    
 .description{
 font-size: 10px;
-
 }
+    
 #projects h5,h6{
 font-size: 10px;
 }
@@ -540,6 +539,7 @@ margin: auto;
 width: 100%;
 margin-bottom: 10px;
 }
+    
 .stats{
 display: flex;
 flex-direction: column;

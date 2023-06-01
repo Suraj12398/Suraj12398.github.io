@@ -57,7 +57,7 @@ nav ul{
     margin-left: 150px;
     width: 550vh;
     display: flex;
-/*     justify-content: space-between; */
+    justify-content: space-between;
 }
 #nav-menu .header-left nav ul {
     display: flex;
@@ -70,6 +70,7 @@ nav ul li a {
     font-size: 25px;
     padding: 5px 10px;
     transition: 0.2s;
+    margin-right: 20px;
 }
 nav ul li a:hover,
 nav ul li a.active {
@@ -178,8 +179,8 @@ font-size: 5vh;
 }
 
 .home-img{
-    width: 30vw;
-    border-radius: 30px;
+    width: 25vw;
+    border-radius: 50px;
 }
 
 #about>h1{
@@ -190,9 +191,9 @@ text-align: center;
 .main_from_about{
     display: flex;
     font-size: larger;
-    width: 100vw;
+    width: 90vw;
      margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -430,6 +431,11 @@ margin-top: 50px;
 display: flex;
 justify-content: space-around;
 align-items: center;
+}
+.stats{
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 #githubInfo2 .stats>img{
   height: 150px;

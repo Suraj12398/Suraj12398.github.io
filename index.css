@@ -22,7 +22,7 @@ body{
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+/*     justify-content: space-between; */
     padding: 0 50px;
     background: #000000;
     padding: 50px;
@@ -463,7 +463,7 @@ align-items: center;
   flex-direction: column;
   padding: 5px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
     #nav-menu {
         padding: 0 20px;
         position: static;

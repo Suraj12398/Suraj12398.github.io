@@ -22,7 +22,7 @@ body{
     height: 70px;
     display: flex;
     align-items: center;
-/*     justify-content: space-between; */
+    justify-content: space-between;
     padding: 0 50px;
     background: #000000;
     padding: 50px;
@@ -43,7 +43,7 @@ nav ul{
 #nav-menu .header-left {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+/*     justify-content: space-between; */
     z-index: 100;
     
 }
@@ -57,11 +57,11 @@ nav ul{
     margin-left: 150px;
     width: 550vh;
     display: flex;
-    justify-content: space-between;
+/*     justify-content: space-between; */
 }
 #nav-menu .header-left nav ul {
     display: flex;
-    justify-content: space-between;
+/*     justify-content: space-between; */
     max-width: 100%;
 }
 nav ul li a {
@@ -464,7 +464,7 @@ align-items: center;
   padding: 5px;
 }
 @media only screen and (max-width: 1000px) {
-    #nav-menu {
+/*     #nav-menu {
         padding: 0 20px;
         position: static;
     }
@@ -493,17 +493,7 @@ align-items: center;
     #nav-menu .header-left nav ul {
         display: block;
     }
-    .social-buttons {
-        flex-direction: column;
-        top: 250px;
-        width: 50px;
-        margin-left: 90%;
-
-      }
-      .social-button {
-        width: 50px;
-        height: 50px;
-      }
+   */
     
     .main_from_about{
       display: flex;

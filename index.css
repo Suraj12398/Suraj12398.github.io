@@ -30,6 +30,10 @@ body{
     margin: auto;
     overflow: hidden;
 }
+nav ul{
+  max-width: 90vw;
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -58,7 +62,7 @@ body{
 #nav-menu .header-left nav ul {
     display: flex;
     justify-content: space-between;
-    width: 130vh;
+     max-width: 100%;
 }
 nav ul li a {
     display: block;
@@ -80,17 +84,14 @@ nav ul li a.active {
 #nav-menu .header-right .hamburger {
     margin-left: 20px;
     cursor: pointer;
-   
     display: none;
 }
 #nav-menu .header-right .hamburger div {
     width: 30px;
     height: 2px;
     margin: 6px 0;
-    
     background: #fff;
 }
-
 
 #home{
     width: 100vw;

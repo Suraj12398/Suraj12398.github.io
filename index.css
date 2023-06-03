@@ -473,7 +473,7 @@ align-items: center;
 #github-streak-stats{
   border: solid white;
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1000px) {
     #nav-menu {
         padding: 0 20px;
         position: static;

@@ -195,7 +195,7 @@ text-align: center;
 margin-left: 50px;
 text-align: justify;
 font-size: 1em;
-height: 300px;
+/* height: 300px; */
 }
 
 
@@ -214,9 +214,9 @@ background-color: #fff;
 padding: 1rem;
 border-radius: 8px;
 box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
-margin-bottom: 1rem;
+/* margin-bottom: 1rem; */
 border: 3px dashed transparent;
-max-width: 850px;
+/* max-width: 850px; */
 }
 
 .task:hover {
@@ -246,14 +246,14 @@ align-items: center;
 justify-content: space-between;
 }
 
-.stats {
-position: relative;
+.address {
 width: 100%;
 color: #9fa4aa;
 font-size: 14px;
 display: flex;
+flex-direction: column;
 align-items: center;
-justify-content: space-between;
+/* justify-content: space-between; */
 }
 #skills{
 margin: auto;
@@ -463,6 +463,11 @@ display: flex;
 flex-direction: column;
 padding: 5px;
 }
+/* .task{
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+/* } */
 @media only screen and (max-width: 1000px) {
  
 
@@ -477,9 +482,7 @@ padding: 5px;
 }
 
 .main_from_about .task{
-  height: 120vh;
   width: 80vw;
-  
 }
 #home{
   height: 80vh;
@@ -530,10 +533,7 @@ flex-direction: column;
 #contact>div div{
 margin-bottom: 20px;
 }
-#about .stats{
-margin-top: 580px;
-text-align: center;
-}
+
 .pfp {
 width: 120px;
 border-radius: 35em;
@@ -605,6 +605,7 @@ justify-content: center;
 }
 .details{
 margin-left: 0px;
+
 }
 .description{
 font-size: 8px;
@@ -635,13 +636,20 @@ flex-direction: column;
 #contact>div div{
 margin-bottom: 20px;
 }
-#about .stats{
-margin-top: 580px;
-text-align: center;
-}
+
 .pfp {
 width: 28vw;
 border-radius: 35em;
 
+}
+.address{
+  font-size: small;
+  text-align: center;
+}
+#user-detail-intro{
+  font-size: 0.5em;
+}
+.tag{
+  padding: 3px;
 }
 }

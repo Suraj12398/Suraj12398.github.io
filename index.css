@@ -439,6 +439,7 @@ align-items: center;
 }
 #githubInfo2 .stats>img{
   height: 150px;
+  border-radius:3px;
 }
 
 #contact>h1{
@@ -469,7 +470,10 @@ align-items: center;
   flex-direction: column;
   padding: 5px;
 }
-@media only screen and (max-width: 1000px) {
+#github-streak-stats{
+  border: solid white;
+}
+@media only screen and (min-width: 968px) {
     #nav-menu {
         padding: 0 20px;
         position: static;

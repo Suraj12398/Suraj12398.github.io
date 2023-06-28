@@ -487,8 +487,19 @@ display: flex;
 flex-direction: column;
 padding: 5px;
 }
-#resume-button-1{
- font-size: 20px;
+
+.nav-link .resume1{
+  background-color: #000000;
+  color: #cfd9e0;
+  opacity: 100%;
+  font-size: x-large;
+ padding: 5px;
+  /* height: 40px; */
+  border: black;
+  padding-top: 0px;
+}
+.nav-link .resume1:hover{
+  color: #fff;
 }
 /* .task{
   display: flex;

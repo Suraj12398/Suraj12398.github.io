@@ -489,6 +489,7 @@ padding: 5px;
 }
 
 .nav-link .resume1{
+  all: unset;
   background-color: #000000;
   color: #cfd9e0;
   opacity: 100%;

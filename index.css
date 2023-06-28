@@ -7,6 +7,10 @@
   font-family: 'monaco';
   
 }
+
+button{
+  cursor: pointer;
+}
 body{
   background-color: #19151d;
   color: white;
@@ -137,7 +141,13 @@ nav ul li a.active {
               0 0 50px rgb(6, 148, 93);
 }
 
-
+.resume-button{
+ opacity:0%;
+}
+#resume-button-2 svg{
+width: 20px;
+vertical-align: middle;
+}
 .profileName h1{
 margin-bottom: 10px;
 font-size: 5vh;
@@ -440,28 +450,45 @@ margin-top: 80px;
 margin-bottom: 40px;
 font-size: 5vw;
 text-align: center;
+width: 100vw;
 
 }
 #contact{
 text-align: center;
 background-color: #000000;
-height: 500px;
-padding-top: 20px;
+height: 100%;
+padding-top: 10px;
+padding-bottom: 50px;
+margin-top: 10px;
 }
 #contact>div{
 display: flex;
 margin: auto;
-justify-content: space-around;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+width: 80%;
+}
+#contact>div>div{
+  width: 50vw;
+}
 
+#contact>div svg{
+  width: 25%;
 }
 #contact h3{
 color: #564f58;
+font-size: 0.9rem;
 }
+
 
 .frame{
 display: flex;
 flex-direction: column;
 padding: 5px;
+}
+#resume-button-1{
+ font-size: 20px;
 }
 /* .task{
   display: flex;
@@ -470,8 +497,6 @@ padding: 5px;
 /* } */
 @media only screen and (max-width: 1000px) {
  
-
-  
   .main_from_about{
     display: flex;
     flex-direction: column;
@@ -523,12 +548,14 @@ margin: auto;
 .stats>img{
 width: 100%;
 }
-#contact{
-height: 120vh;
+ #contact{
+  padding-top: 10px;
+height: 100%;
 }
 #contact>div{
 display: flex;
 flex-direction: column;
+
 }
 #contact>div div{
 margin-bottom: 20px;
@@ -626,16 +653,16 @@ margin: auto;
 .stats>img{
 width: 100%;
 }
-#contact{
+/* #contact{
 height: 120vh;
-}
-#contact>div{
+} */
+/* #contact>div{
 display: flex;
 flex-direction: column;
-}
-#contact>div div{
+} */
+/* #contact>div div{
 margin-bottom: 20px;
-}
+} */
 
 .pfp {
 width: 28vw;

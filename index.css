@@ -488,7 +488,7 @@ flex-direction: column;
 padding: 5px;
 }
 
-.nav-link .resume1{
+.nav-link .resume{
   all: unset;
   background-color: #000000;
   color: #cfd9e0;
@@ -499,7 +499,7 @@ padding: 5px;
   border: black;
   padding-top: 0px;
 }
-.nav-link .resume1:hover{
+.nav-link .resume:hover{
   color: #fff;
 }
 /* .task{

@@ -5,23 +5,20 @@
   text-decoration: none;
   list-style: none;
   font-family: 'monaco';
-  
+
 }
 
 button{
   cursor: pointer;
 }
+
 body{
   background-color: #19151d;
   color: white;
   overflow-x: hidden;
   max-width: 100%;
 }
-#nav-menu img {
-  width: 50%;
-  border-radius: 50px;
 
-}
 #nav-menu {
   height: 70px;
   display: flex;
@@ -84,7 +81,6 @@ nav ul li a.active {
 #nav-menu .header-right .hamburger {
   margin-left: 20px;
   cursor: pointer;
- 
   display: none;
 }
 #nav-menu .header-right .hamburger div {
@@ -101,18 +97,31 @@ nav ul li a.active {
   height: 90vh;
   margin-bottom: 60px;
   background-color: #000000;
-  
+ 
 }
 .main_from_home{
   display: flex;
   align-items: center;
   justify-content: space-around;
   /* padding-top: 80px; */
+ 
 }
 .main_from_home img{
-  width: 30vw;
+  width: 100%;
+object-fit: cover;
+object-position:top;
+ 
 }
-
+.homeImg{
+  display: flex;
+  width: 30vw;
+  height: 80vh;
+  overflow: hidden;
+  padding: 5px;
+  /* border: 1px solid red; */
+  
+  
+}
 .resume {
   color: black;
   border: white 1px solid;
@@ -266,15 +275,32 @@ align-items: center;
 /* justify-content: space-between; */
 }
 #skills{
-margin: auto;
+  display: grid;
+  width: 30vw;
+  grid-template-columns: repeat(5,1fr);
+  row-gap: 25px;
+  justify-content: center;
+  
+  padding: 30px;
+
+}
+#tools{
+  /* margin: auto; */
 display: grid;
-width: 900px;
-grid-template-columns: repeat(5,150px);
-row-gap: 25px;
-justify-content: space-around;
+width: 30vw;
+grid-template-columns: repeat(3,1fr);
+gap: 25px;
+/* row-gap: 25px; */
+justify-content: center;
 
 padding: 30px;
-
+}
+#skillsAndTools{
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
 }
 .frame {
 position: relative;
@@ -312,35 +338,27 @@ margin-bottom: 40px;
 font-size: 5vw;
 text-align: center;
 }
-.flip-card {
-background-color: transparent;
-width: 28vw;
-height: 230px;
-perspective: 1000px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-.flip-card-inner {
-position: relative;
-width: 100%;
-height: 100%;
-text-align: center;
-transition: transform 0.6s;
-transform-style: preserve-3d;
-}
-
-.flip-card-front, .flip-card-back {
+ .flip-card-back {
 position: absolute;
 width: 100%;
 height: 100%;
 padding: 5px;
 border-radius: 1em;
-backface-visibility: hidden;
+/* backface-visibility: hidden; */
 }
 
 .flip-card-front {
-background-color: #2a2f3b;
-border: 4px solid #2f2c30;
+  background-color: #2a2f3b;
+  border: 4px solid #2f2c30;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  height: 300px;
+  margin: 10px;
+  width: 30vw;
 }
 
 
@@ -359,12 +377,6 @@ font-weight: bold;
 
 }
 
-.flip-card-back {
-background-color: #564f58;
-border: 4px solid #989798;
-transform: rotateY(180deg);
-padding: 11px;
-}
 
 .description {
 margin-top: 10px;
@@ -395,27 +407,40 @@ color: #c143da
 color: white;
 }
 
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
 transform: rotateY(180deg);
-}
+} */
 #projects{
-width: 100vw;
-margin: auto;
-display: grid;
-grid-template-columns: repeat(2,400px);
-row-gap: 25px;
-column-gap: 10px;
-justify-content: center;
-padding: 30px;
-
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-behavior: smooth;
 }
-
+#projects::-webkit-scrollbar{
+  overflow: hidden;
+}
+#scrollButton{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 20px;
+height: 20px;
+}
+#scrollButton button{
+  background-color: transparent;
+  border: 0px;
+}
+#scrollButton button:hover{
+  zoom: 140%;
+}
 #myProject>h1{
 margin-top: 80px;
 margin-bottom: 40px;
 font-size: 5vw;
 text-align: center;
-}
+} */
 #githubInfo>h1{
 margin-top: 80px;
 margin-bottom: 40px;
@@ -507,6 +532,42 @@ padding: 5px;
   flex-direction: column;
   /* flex-wrap: nowrap; */
 /* } */
+#worktime{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+justify-content: center;
+margin: auto;
+width: 60vw;
+margin-top: 20px;
+gap: 10px;
+border: 1px solid slategrey;
+padding: 5px;
+border-radius: 10px;
+}
+#worktime>div{
+  border:1px solid slategray;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  }
+  #worktime>div h1,h3{
+    
+font-size: 1rem;
+  }
+  #worktime>div h1{
+    color: #1389eb;
+  }
+  #about #resume-button-2{
+    all: unset;
+    display: block;
+    margin: auto;
+    color: black;
+    background-color: rgb(40, 210, 122);
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid white;
+  }
+
 @media only screen and (max-width: 1000px) {
  
   .main_from_about{
@@ -524,34 +585,15 @@ padding: 5px;
 #home{
   height: 80vh;
 }
+.homeImg{
+  height: 60vh;}
 #skills{
   width: 100vw;
 display: grid;
-grid-template-columns: repeat(2,100px);
+grid-template-columns: repeat(3,100px);
 justify-content: space-around;
 }
-#projects{
-display: grid;
-grid-template-columns: repeat(1,100vw);
-justify-content: center;
-}
-#projects>div{
-  margin: auto;
-}
-.details{
-margin-left: 0px;
-}
-.description{
-font-size: 8px;
-}
-#projects h5,h6{
-font-size: 10px;
-}
 
-.flip-card{
-width: 50vw;
-margin-bottom: 10px;
-}
 .stats{
 display: flex;
 flex-direction: column;
@@ -578,7 +620,21 @@ width: 120px;
 border-radius: 35em;
 
 }
+#projects{
+  width: 80vw;
 }
+.flip-card-front{
+width: 60vw;
+height: 300px;
+/* padding: 20px; */
+}
+#skillsAndTools{
+flex-direction: column;
+align-items: center;
+}
+}
+
+
 @media only screen and (max-width: 500px) {
   #nav-menu {
     padding: 0 20px;
@@ -627,36 +683,20 @@ border-radius: 35em;
     
   }
   #home{
+    display: flex;
     height: 50vh;
+    flex-direction: column;
   }
-
+  .homeImg{
+    width: 70vw;
+    height: 50vh;}
   #skills{
     width: 100vw;
   display: grid;
   grid-template-columns: repeat(2,100px);
   justify-content: space-around;
   }
-#projects{
 
-display: grid;
-grid-template-columns: repeat(1,200px);
-justify-content: center;
-}
-.details{
-margin-left: 0px;
-
-}
-.description{
-font-size: 8px;
-}
-#projects h5,h6{
-font-size: 10px;
-}
-
-.flip-card{
-width: 50vw;
-margin-bottom: 10px;
-}
 .stats{
 display: flex;
 flex-direction: column;
@@ -665,17 +705,14 @@ margin: auto;
 .stats>img{
 width: 100%;
 }
-/* #contact{
-height: 120vh;
-} */
-/* #contact>div{
-display: flex;
-flex-direction: column;
-} */
-/* #contact>div div{
-margin-bottom: 20px;
-} */
-
+#projects{
+  width: 100vw;
+}
+.flip-card-front{
+width: 300px;
+height: 400px;
+/* padding: 20px; */
+}
 .pfp {
 width: 28vw;
 border-radius: 35em;
@@ -691,4 +728,15 @@ border-radius: 35em;
 .tag{
   padding: 3px;
 }
+#worktime{
+  grid-template-columns: repeat(2,1fr);
+ align-self: center;
+  
+  }
+  #tools{
+    width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2,100px);
+  justify-content: space-around;
+  }
 }

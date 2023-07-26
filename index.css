@@ -7,7 +7,9 @@
   font-family: 'monaco';
 
 }
-
+a{
+  color: #000000;
+}
 button{
   cursor: pointer;
 }
@@ -122,7 +124,7 @@ object-position:top;
   
   
 }
-.resume {
+#home .resume {
   color: black;
   border: white 1px solid;
   background-color: rgb(193, 238, 124);
@@ -138,20 +140,24 @@ object-position:top;
   transition-property: box-shadow;
 }
 
-.resume {
+#home .resume {
   background: rgb(21, 186, 101);
   box-shadow: 0 0 15px rgb(18, 230, 152);
 }
 
-.resume:hover {
+#home .resume:hover {
   box-shadow: 0 0 5px rgb(42, 189, 115),
               0 0 10px rgb(11, 133, 104),
               0 0 15px rgb(9, 144, 81),
               0 0 50px rgb(6, 148, 93);
 }
 
-.resume-button{
+#home .resume-button{
  opacity:0%;
+}
+nav button{
+  background-color: transparent;
+  border: 0px;
 }
 #resume-button-2 svg{
 width: 20px;
@@ -513,20 +519,9 @@ flex-direction: column;
 padding: 5px;
 }
 
-.nav-link .resume{
-  all: unset;
-  background-color: #000000;
-  color: #cfd9e0;
-  opacity: 100%;
-  font-size: x-large;
- padding: 5px;
-  /* height: 40px; */
-  border: black;
-  padding-top: 0px;
-}
-.nav-link .resume:hover{
-  color: #fff;
-}
+
+
+
 /* .task{
   display: flex;
   flex-direction: column;

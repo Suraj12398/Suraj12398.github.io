@@ -7,6 +7,10 @@
   font-family: 'monaco';
 
 }
+
+
+
+::selection { background-color: #C3CFE2; }
 a{
   color: #000000;
 }
@@ -20,7 +24,22 @@ body{
   overflow-x: hidden;
   max-width: 100%;
 }
+#nameplate{
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+  background-color: transparent;
+  height: 70px;
+  /* border: 2px solid red; */
 
+}
+#nameplate > h3{
+	text-transform: uppercase;
+	background: linear-gradient(to right, #7cc2ed 0%, #2997d2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: x-large;
+}
 #nav-menu {
   height: 70px;
   display: flex;
@@ -564,7 +583,9 @@ font-size: 1rem;
   }
 
 @media only screen and (max-width: 1000px) {
- 
+  #nameplate{
+    display: none;
+  }
   .main_from_about{
     display: flex;
     flex-direction: column;

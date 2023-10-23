@@ -54,6 +54,7 @@ body{
 }
 nav ul{
 max-width: 90vw;
+
 }
 .sticky {
 position: sticky;
@@ -92,7 +93,9 @@ nav ul li a:hover,
 nav ul li a.active {
   color: #fff;
 }
-
+.resume{
+  cursor: pointer;
+}
 #nav-menu .header-right {
   display: flex;
   align-items: center;
@@ -118,7 +121,7 @@ nav ul li a.active {
   height: 90vh;
   margin-bottom: 60px;
   background-color: #000000;
- 
+
 }
 .main_from_home{
   display: flex;
@@ -755,4 +758,12 @@ border-radius: 35em;
   grid-template-columns: repeat(2,100px);
   justify-content: space-around;
   }
+}
+
+.calendar{
+  margin: auto;
+}
+.calendar img{
+  width: 100%;
+  margin: auto;
 }

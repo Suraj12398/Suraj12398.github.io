@@ -106,13 +106,19 @@ nav ul li a.active {
   margin-left: 20px;
   cursor: pointer;
   display: none;
+  position: fixed;
+  left: 0px;
+  
 }
 #nav-menu .header-right .hamburger div {
   width: 30px;
   height: 2px;
   margin: 6px 0;
   background: #fff;
+  
 }
+
+
 
 #home{
   width: 100vw;
@@ -661,6 +667,8 @@ align-items: center;
 }
 #nav-menu .header-right .hamburger {
     display: block;
+  
+  
 }
 #nav-menu .header-left nav {
     margin: 0;
@@ -674,6 +682,7 @@ align-items: center;
     transition: 0.3s;
     text-align: center;
     z-index: -1;
+    position: fixed;
 }
 
 #nav-menu .header-left nav.active {
@@ -682,7 +691,7 @@ align-items: center;
 #nav-menu .header-left nav ul {
     display: block;
 }
- 
+
  
   .social-buttons {
       flex-direction: column;

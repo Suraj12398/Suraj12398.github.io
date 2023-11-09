@@ -245,10 +245,13 @@ text-align: center;
 .main_from_about{
   display: flex;
   font-size: larger;
-  width: 90vw;
+  width: 100vw;
    margin: auto;
   justify-content: space-around;
   align-items: center;
+  /* display: none; */
+/* border: 1px solid red; */
+  
 }
 
 .main_from_about p{
@@ -417,7 +420,10 @@ font-weight: bold;
 
 }
 
-
+.summary{
+  display: flex;
+  justify-content: center;
+}
 .description {
 margin-top: 10px;
 font-size: 12px;
@@ -657,6 +663,9 @@ align-items: center;
 #nav-menu {
   padding: 0;
 }
+.details{
+  margin-left: 0px;
+ }
 }
 
 
@@ -770,6 +779,9 @@ border-radius: 35em;
   #nav-menu {
     padding: 0;
   }
+  .details{
+     margin-left: 0px;
+    }
 }
 
 .calendar{

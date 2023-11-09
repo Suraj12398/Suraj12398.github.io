@@ -1,13 +1,16 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  
   text-decoration: none;
   list-style: none;
   font-family: 'monaco';
 
 }
-
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
 
 
 ::selection { background-color: #C3CFE2; }
@@ -107,7 +110,8 @@ nav ul li a.active {
   cursor: pointer;
   display: none;
   position: fixed;
-  left: 0px;
+  left: 75%;
+  z-index: 100000;
   
 }
 #nav-menu .header-right .hamburger div {
@@ -145,7 +149,6 @@ object-position:top;
 .homeImg{
   display: flex;
   width: 30vw;
-  height: 80vh;
   overflow: hidden;
   padding: 5px;
   /* border: 1px solid red; */
@@ -283,12 +286,12 @@ margin: 1.2rem 0;
 }
 
 .tag {
+color: white;
+margin: auto;
+background-color:#1389eb;
 border-radius: 100px;
-padding: 12px;
-font-size: 20px;
-color: #ffffff;
-background-color: #1389eb;
-height: 50px;
+padding: 10px;
+font-size: 1.5rem;
 text-align: center;
 }
 
@@ -314,7 +317,6 @@ align-items: center;
   grid-template-columns: repeat(5,1fr);
   row-gap: 25px;
   justify-content: center;
-  
   padding: 30px;
 
 }
@@ -474,7 +476,7 @@ margin-top: 80px;
 margin-bottom: 40px;
 font-size: 5vw;
 text-align: center;
-} */
+} 
 #githubInfo>h1{
 margin-top: 80px;
 margin-bottom: 40px;
@@ -512,6 +514,7 @@ text-align: center;
 width: 100vw;
 
 }
+
 #contact{
 text-align: center;
 background-color: #000000;
@@ -547,14 +550,6 @@ flex-direction: column;
 padding: 5px;
 }
 
-
-
-
-/* .task{
-  display: flex;
-  flex-direction: column;
-  /* flex-wrap: nowrap; */
-/* } */
 #worktime{
 display: grid;
 grid-template-columns: repeat(4,1fr);
@@ -600,9 +595,7 @@ font-size: 1rem;
     flex-direction: column;
 }
 
-.main_from_about .tag{
-  height: 60px;
-}
+
 
 .main_from_about .task{
   width: 80vw;
@@ -657,6 +650,9 @@ height: 300px;
 flex-direction: column;
 align-items: center;
 }
+#nav-menu {
+  padding: 0;
+}
 }
 
 
@@ -686,7 +682,7 @@ align-items: center;
 }
 
 #nav-menu .header-left nav.active {
-    top: 70px;
+    top: 0px;
 }
 #nav-menu .header-left nav ul {
     display: block;
@@ -717,7 +713,8 @@ align-items: center;
   }
   .homeImg{
     width: 70vw;
-    height: 50vh;}
+    height: 45vh;
+  }
   #skills{
     width: 100vw;
   display: grid;
@@ -753,9 +750,7 @@ border-radius: 35em;
 #user-detail-intro{
   font-size: 0.5em;
 }
-.tag{
-  padding: 3px;
-}
+
 #worktime{
   grid-template-columns: repeat(2,1fr);
  align-self: center;
@@ -766,6 +761,10 @@ border-radius: 35em;
   display: grid;
   grid-template-columns: repeat(2,100px);
   justify-content: space-around;
+  }
+
+  #nav-menu {
+    padding: 0;
   }
 }
 

@@ -249,8 +249,7 @@ text-align: center;
    margin: auto;
   justify-content: space-around;
   align-items: center;
-  /* display: none; */
-/* border: 1px solid red; */
+  
   
 }
 
@@ -258,7 +257,7 @@ text-align: center;
 margin-left: 50px;
 text-align: justify;
 font-size: 1em;
-/* height: 300px; */
+
 }
 
 

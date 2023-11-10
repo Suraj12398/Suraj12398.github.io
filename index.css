@@ -242,6 +242,9 @@ font-size: 5vw;
 text-align: center;
 }
 
+
+
+
 .main_from_about{
   display: flex;
   font-size: larger;
@@ -317,6 +320,11 @@ flex-direction: column;
 align-items: center;
 /* justify-content: space-between; */
 }
+
+#about a{
+color: white;
+}
+
 #skills{
   display: grid;
   width: 30vw;
@@ -498,7 +506,7 @@ text-align: center;
 margin: auto;
 margin-top: 100px;
 text-align: center;
-width: 80%;
+width: 80vw;
 }
 #githubInfo2{
 margin-top: 50px;
@@ -567,7 +575,7 @@ margin: auto;
 width: 60vw;
 margin-top: 20px;
 gap: 10px;
-border: 1px solid slategrey;
+/* border: 1px solid slategrey; */
 padding: 5px;
 border-radius: 10px;
 }
@@ -589,13 +597,47 @@ font-size: 1rem;
     display: block;
     margin: auto;
     color: black;
-    background-color: rgb(40, 210, 122);
-    padding: 5px;
+    background-color: rgb(40, 156, 210);
+    padding: 10px;
     margin-top: 10px;
-    border: 1px solid white;
+    border-radius: 5px;
+    
   }
 
 @media only screen and (max-width: 1000px) {
+  #nav-menu {
+    padding: 0 20px;
+    position: static;
+}
+#nav-menu .header-right .hamburger {
+    display: block;
+  
+  
+}
+#nav-menu .header-left nav {
+    margin: 0;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #000000;
+    padding: 30px;
+    transition: 0.3s;
+    text-align: center;
+    z-index: -1;
+    position: fixed;
+}
+
+#nav-menu .header-left nav.active {
+    top: 0px;
+}
+#nav-menu .header-left nav ul {
+    display: block;
+}
+
+
+
   #nameplate{
     display: none;
   }
@@ -617,7 +659,7 @@ font-size: 1rem;
 #skills{
   width: 100vw;
 display: grid;
-grid-template-columns: repeat(3,100px);
+grid-template-columns: repeat(3,130px);
 justify-content: space-around;
 }
 
@@ -652,7 +694,7 @@ border-radius: 35em;
 }
 .flip-card-front{
 width: 60vw;
-height: 300px;
+/* height: 300px; */
 /* padding: 20px; */
 }
 #skillsAndTools{
@@ -714,7 +756,7 @@ align-items: center;
     }
   
   .main_from_about .task{
-    height: 120vh;
+    /* height: 120vh; */
     width: 80vw;
     
   }
@@ -730,7 +772,7 @@ align-items: center;
   #skills{
     width: 100vw;
   display: grid;
-  grid-template-columns: repeat(2,100px);
+  grid-template-columns: repeat(2,130px);
   justify-content: space-around;
   }
 
@@ -747,7 +789,7 @@ width: 100%;
 }
 .flip-card-front{
 width: 300px;
-height: 400px;
+
 /* padding: 20px; */
 }
 .pfp {
@@ -771,7 +813,7 @@ border-radius: 35em;
   #tools{
     width: 100vw;
   display: grid;
-  grid-template-columns: repeat(2,100px);
+  grid-template-columns: repeat(2,130px);
   justify-content: space-around;
   }
 
@@ -785,6 +827,7 @@ border-radius: 35em;
 
 .calendar{
   margin: auto;
+  width: 100%;
 }
 .calendar img{
   width: 100%;

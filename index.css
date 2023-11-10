@@ -327,20 +327,19 @@ color: white;
 
 #skills{
   display: grid;
-  width: 30vw;
+  /* width: 30vw; */
   grid-template-columns: repeat(5,1fr);
-  row-gap: 25px;
+  gap: 25px;
   justify-content: center;
   padding: 30px;
 
 }
 #tools{
-  /* margin: auto; */
 display: grid;
 width: 30vw;
 grid-template-columns: repeat(3,1fr);
 gap: 25px;
-/* row-gap: 25px; */
+
 justify-content: center;
 
 padding: 30px;
@@ -357,7 +356,7 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 130px;
+/* width: 130px; */
 height: 150px;
 background-color: #283531;
 border-radius: 20px;

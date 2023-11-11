@@ -24,6 +24,8 @@ button{
 body{
   background-color: #19151d;
   color: white;
+  /* background-color: #fdfbff;
+  color: #000000; */
   overflow-x: hidden;
   max-width: 100%;
 }
@@ -135,7 +137,8 @@ nav ul li a.active {
   height: 90vh;
   margin-bottom: 60px;
   background-color: #000000;
-
+/* background-color: #fdfbff;
+color: #000000; */
 }
 .main_from_home{
   display: flex;
@@ -577,19 +580,24 @@ gap: 10px;
 /* border: 1px solid slategrey; */
 padding: 5px;
 border-radius: 10px;
+
 }
 #worktime>div{
   border:1px solid slategray;
   text-align: center;
   padding: 10px;
   border-radius: 5px;
+
   }
-  #worktime>div h1,h3{
-    
+
+  
+  
+  #worktime>div h3{
 font-size: 1rem;
   }
   #worktime>div h1{
     color: #1389eb;
+    font-size: 2rem;
   }
   #about #resume-button-2{
     all: unset;

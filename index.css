@@ -4,9 +4,25 @@
   
   text-decoration: none;
   list-style: none;
-  font-family: 'monaco';
+  font-family: 'Poppins';
 
 }
+
+
+@keyframes pulse0112 {
+  0%,
+  100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
 body{
   margin: 0;
   overflow-x: hidden;

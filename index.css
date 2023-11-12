@@ -4,7 +4,7 @@
   
   text-decoration: none;
   list-style: none;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -728,7 +728,7 @@ align-items: center;
     padding: 30px;
     transition: 0.3s;
     text-align: center;
-    z-index: -1;
+    z-index: 1000000;
     position: fixed;
 }
 

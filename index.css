@@ -9,6 +9,7 @@
 }
 
 
+
 @keyframes pulse0112 {
   0%,
   100% {
@@ -830,3 +831,68 @@ border-radius: 35em;
   width: 100%;
   margin: auto;
 }
+
+
+
+
+
+#work-experience-container {
+  
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+#work-experience-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #fffefe;
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  color: #f9f7f7;
+  padding: 50px;
+  background-color: #302f2f;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#work-experience-container .experience-item .description ul{
+  list-style-type: square;
+}
+.experience-item h3 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.experience-item .duration {
+  font-size: 14px;
+  color: #fef9f9;
+  margin: 5px 0;
+}
+.role{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.role h3{
+  font-family:'Times New Roman', Times, serif;
+}
+
+.experience-item .description li{
+  font-size: 16px;
+  color: #fefefe;
+  line-height: 1.5;
+  text-align: left;
+  list-style-type: square;
+
+}
+
+.role p{
+  font-style: italic;
+}
+
